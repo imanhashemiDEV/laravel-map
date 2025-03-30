@@ -13,8 +13,13 @@ class HomePage extends Component
 
     public function mount()
     {
-        $this->lat = 31.311690858338736;
-        $this->lng = 48.65974247202343;
+        $this->lat = 31.34456406708593;
+        $this->lng = 48.71614498515577;
+  }
+
+    public function foo()
+    {
+        dd('foo');
   }
     #[Layout('livewire.layouts.master')]
     public function render():View
