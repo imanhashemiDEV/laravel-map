@@ -21,6 +21,11 @@ class HomePage extends Component
     {
         dd('foo');
   }
+
+    public function getPostion($lat,$lng)
+    {
+        dd($lat,$lng);
+  }
     #[Layout('livewire.layouts.master')]
     public function render():View
     {
