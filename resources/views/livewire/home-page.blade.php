@@ -6,17 +6,11 @@
 
 @script
 <script>
-         const map = L.map('map',{
-             center :[$wire.lat, $wire.lng ],
-             zoom: 17,
-             maxZoom : 18,
-             minZoom : 10,
-             zoomControl : true
-         });
+
+
+         let map = L.map('map').setView([$wire.lat, $wire.lng ], 17);
          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-
-
-
+         L.Control.geocoder().addTo(map);
 </script>
 @endscript

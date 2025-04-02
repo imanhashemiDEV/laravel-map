@@ -5,6 +5,8 @@ namespace App\Livewire;
 use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Stevebauman\Location\Facades\Location;
+use Stevebauman\Location\Position;
 
 class HomePage extends Component
 {
@@ -15,12 +17,11 @@ class HomePage extends Component
     {
         $this->lat = 31.34456406708593;
         $this->lng = 48.71614498515577;
-  }
 
-    public function foo()
-    {
-        dd('foo');
-  }
+//        $ip = request()->ip(); //Dynamic IP address get
+//        $data= Location::get($ip);
+//        dd($data);
+    }
 
     public function getPostion($lat,$lng)
     {

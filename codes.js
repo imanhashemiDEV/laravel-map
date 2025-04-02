@@ -1,4 +1,15 @@
- //////  marker   ///////
+const map = L.map('map',{
+    center :[$wire.lat, $wire.lng ],
+    zoom: 17,
+    maxZoom : 18,
+    minZoom : 10,
+    zoomControl : true
+});
+
+
+
+
+//////  marker   ///////
           const myIcon = L.icon({
               iconUrl: "https://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-Free-Download-PNG.png",
               iconSize:[45,45]
