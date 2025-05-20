@@ -6,7 +6,7 @@ const map = L.map('map',{
     zoomControl : true
 });
 
-
+// imanhashemiDEV
 
 
 //////  marker   ///////
@@ -37,3 +37,6 @@ const map = L.map('map',{
          $wire.getPostion(event.target._latlng.lat,event.target._latlng.lng)
      })
  })
+
+
+L.marker([$wire.lat, $wire.lng]).addTo(map);

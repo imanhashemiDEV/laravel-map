@@ -13,7 +13,7 @@ class HomePage extends Component
   public $lat;
   public $lng;
 
-    public function mount()
+    public function mount(): void
     {
         $this->lat = 31.34456406708593;
         $this->lng = 48.71614498515577;
