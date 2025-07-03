@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Stevebauman\Location\Facades\Location;
@@ -22,11 +23,6 @@ class HomePage extends Component
 //        $data= Location::get($ip);
 //        dd($data);
     }
-
-    public function getPostion($lat,$lng)
-    {
-        dd($lat,$lng);
-  }
     #[Layout('livewire.layouts.master')]
     public function render():View
     {

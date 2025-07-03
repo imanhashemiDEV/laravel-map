@@ -40,3 +40,18 @@ const map = L.map('map',{
 
 
 L.marker([$wire.lat, $wire.lng]).addTo(map);
+
+          /// get user location
+
+navigator.geolocation.getCurrentPosition(function (location){
+    let lng = location.coords.longitude;
+    let lat = location.coords.latitude;
+    console.log(location.coords.accuracy);
+
+    let map = L.map('map').setView([lat, lng ], 17);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    L.marker([lat, lng]).addTo(map);
+})
+
+

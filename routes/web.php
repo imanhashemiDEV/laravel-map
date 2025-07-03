@@ -6,6 +6,7 @@ use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',\App\Livewire\HomePage::class)->name('home');
+Route::get('/neshan',\App\Livewire\Neshan::class)->name('neshan');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
