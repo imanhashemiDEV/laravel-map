@@ -11,8 +11,14 @@ use Livewire\Component;
 class Neshan extends Component
 {
 
-
-
+    public $lat;
+    public $lng;
+    public $address;
+    public function mount(): void
+    {
+        $this->lat = 31.34456406708593;
+        $this->lng = 48.71614498515577;
+    }
 
 
     #[Layout('livewire.layouts.master_neshan')]
