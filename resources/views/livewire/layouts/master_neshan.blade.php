@@ -7,6 +7,7 @@
     <title>Laravel Map</title>
     <link rel="stylesheet" href="https://static.neshan.org/sdk/leaflet/v1.9.4/neshan-sdk/v1.0.8/index.css"/>
     <script src="https://static.neshan.org/sdk/leaflet/v1.9.4/neshan-sdk/v1.0.8/index.js"></script>
+    <script src="{{url('map/Polyline.encoded.js')}}"></script>
     <style>
         .box {
             height: 80vh;
